@@ -10,7 +10,7 @@ window.onload = ->
   restart = _gel 'restart'
   logger = _gel 'logger'
 
-  socket = chrome.experimental.socket || chrome.socket
+  socket = chrome.experimental?socket || chrome.socket
   var socketInfo
 
   stringToUint8Array = (string) ->
